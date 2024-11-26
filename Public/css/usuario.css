@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.perfil-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.perfil-img {
+    position: relative;
+    background-image: url(../img/fondo-perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.perfil-img::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+.perfil-img > * {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.foto-perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.perfil-info {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.perfil-info h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #0d0d0d;
+}
+
+/*#nombre-usuario {
+    color: #0487d9;
+}*/
+
+.perfil-info p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.eventos01 {
+    width: 100%;
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.eventos01 h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #0d0d0d;
+}
+
+.evento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.evento p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: #333;
+}
+
+.cierre-sesion{
+    margin-top: 20px;
+}
+
+.cerrar-sesion {
+    padding: 10px 20px; 
+    background-color: #e3e3e3;
+    color: #d33832; 
+    border: none; 
+    background-color: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cerrar-sesion:hover{
+    background-color: #c0c0c0;
+}
+
+.detalle-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #f2f2f2;
+    color: #0487d9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.detalle-btn:hover {
+    background-color: #d3d3d3;
+}
+
+.eliminar-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #d33832;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.eliminar-btn:hover {
+    background-color: #b52c2c;
+}
+
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    animation: fadeIn 0.3s ease-out;
+    overflow-y: auto; 
+    padding-top: 0px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideIn {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #0487d9;
+    text-decoration: none;
+}
+
+/* Estilos para los detalles */
+.modal-body {
+    border-radius: 30px;
+    padding: 25px;
+    background-color: #f2f2f2;
+    max-height: 80vh; 
+    overflow-y: auto; 
+}
+
+.modal-body p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 15px 0;
+    color: #0d0d0d; 
+}
+
+.modal-body h3 {
+    background-color: #d3d3d3;
+    border: 1px transparent;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 20px;
+    color: #0d0d0d;
+}
+
+.modal-body p strong {
+    font-family: "Open Sans", sans-serif;
+    color: #0d0d0d; 
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+#overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 999; 
+}
+
+/* Modal de eliminar cuenta */
+#eliminar-cuenta-form {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+    z-index: 1000;
+    background-color: #0d0d0d;
+    
+    opacity: 0; 
+    transform: translate(-50%, -50%) scale(0.8); 
+    
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#eliminar-cuenta-form.show {
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+#eliminar-cuenta-form h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#eliminar-cuenta-form input {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#eliminar-cuenta-form button.cancelar {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f2f2f2;
+    color: #0487d9;
+}
+
+#eliminar-cuenta-form button.cancelar:hover {
+    background-color: #d3d3d3;
+}
+
+#eliminar-cuenta-form button {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #0487d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 49%;
+    font-size: 15px;
+}
+
+#eliminar-cuenta-form button:hover {
+    background-color: #0387a9;
+}
+
+
+.eliminar-cuenta {
+    padding: 10px 20px; 
+    color: #f2f2f2; 
+    border: none; 
+    background-color: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #d33832;
+    margin-left: 10px;
+}
+
+.eliminar-cuenta:hover{
+    color: #f2f2f2;
+    background-color: #b52c2c;
+}
+

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #ffffff;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.form-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-container h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    color: #0d0d0d;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container button {
+    font-family: "Open Sans", sans-serif;
+    color: #0d0d0d;
+    width: 100%;             
+    padding: 10px;           
+    margin-bottom: 15px;     
+    border: 1px solid #ccc;  
+    border-radius: 50px;     
+    font-size: 14px;         
+    box-sizing: border-box;  
+}
+
+.form-container button {
+    margin-top: 25px;
+    font-size: 18px;
+    background-color: #0487d9;  
+    color: white;               
+    border: none;                
+    cursor: pointer;            
+    transition: background-color 0.3s ease; 
+}
+
+.form-container button:hover {
+    background-color: #0378a6;  
+}
+
+.form-container .sign-up {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;        
+    font-size: 12px;           
+    color: #1e1e1ec6;               
+    margin-top: 10px;
+    white-space: nowrap;       
+}
+
+.form-container .sign-up a {
+    text-decoration: none;
+    color: #0487d9;
+}
+
+.form-container .sign-up a:hover {
+    text-decoration: underline;
+    color: #0378a6;
+}
+
+.form-container .sign-up::before,
+.form-container .sign-up::after {
+    content: "";
+    display: inline-block;
+    width: 20%;                
+    height: 1px;
+    background-color: #ccc;
+    vertical-align: middle;
+    margin: 0 10px;
+    box-sizing: border-box;    
+}
+
+.image-section {
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Asegúrate de que no se muestre el ícono de la contraseña por defecto */
+.password-container input[type="password"]::-ms-reveal,
+.password-container input[type="password"]::-webkit-contacts-auto-fill-button,
+.password-container input[type="password"]::-webkit-reveal {
+    display: none;
+}
+
+.password-container input[type="password"] {
+    width: 100%;
+    padding-right: 30px; 
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 11px; 
+    transform: translateY(0); 
+    width: 20px; 
+    cursor: pointer;
+}
+
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="../img/Logo/logo2.png">
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+<body>
+    <!--Barra de navegación -->
+    <div id="barra"></div>
+
+    <script>
+        fetch('../html/barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra').innerHTML = data;
+            });
+    </script>
+    
+  <section class="hero-section">
+      <video autoplay muted loop id="background-video">
+          <source src="../video/vid.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+      </video>
+      <div class="overlay"></div> <!-- Filtro oscuro para el video -->
+      <div class="text-content">
+        <h1>Producción de Eventos</h1>
+        <h2>Transformadora</h2>
+        <p>Optimiza tu proceso de planificación con nuestra innovadora plataforma. Diseñada para adaptarse a las necesidades de cualquier organización.</p>
+        
+          <a href="#loquehacemos"><button>Empezar</button></a>
+      </div>
+  </section>
+  
+
+<section id="loquehacemos" >
+    <h2 class="services-title">Lo Que Hacemos Por Ti</h2> 
+
+    <div class="slider-container">
+        <div class="slider-track">
+          <div class="slider-slide right">
+            <img src="../img/galeria/concierto.jpg" alt="Conciertos">
+            <div class="slider-content">
+                <h2>Conciertos</h2>
+                <p>Producción y logística para eventos en vivo con los mejores artistas y técnicos en escena.</p>
+            </div>
+            </div>
+            <div class="slider-slide left">
+            <img src="../img/galeria/servicio-catering.jpg" alt="Servicio de Catering">
+            <div class="slider-content">
+                <h2>Servicio de Catering</h2>
+                <p>Ofrecemos menús personalizados y adaptados a cada tipo de evento para asegurar una experiencia culinaria única.</p>
+            </div>
+            </div>
+
+            <div class="slider-slide active">
+              <img src="../img/galeria/cumpleaños.jpg" alt="Fiestas de Cumpleaños">
+              <div class="slider-content">
+                  <h2>Fiestas de Cumpleaños</h2>
+                  <p>Nos encargamos de planificar y coordinar todos los aspectos para que disfrutes al máximo tu día especial.</p>
+              </div>
+              </div>
+            <div class="slider-slide right">
+            <img src="../img/galeria/boda.jpg" alt="Bodas">
+            <div class="slider-content">
+                <h2>Bodas</h2>
+                <p>Organización de ceremonias y recepciones elegantes, adaptadas a los gustos de cada pareja.</p>
+            </div>
+            </div>
+            <div class="slider-slide right">
+            <img src="../img/galeria/decoracion.jpg" alt="Decoración Personalizada">
+            <div class="slider-content">
+                <h2>Decoración Personalizada</h2>
+                <p>Creamos ambientes únicos que reflejan la personalidad y los gustos de cada cliente.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+<div class="contenedor-boton">
+    <a href="#serv"><button class="boton-centrado">Ver todo</button></a>
+</div> 
+</section>
+
+<script src="../js/slider.js"></script>
+
+<!-- Section con tarjetas -->
+<section id="serv" class="servicios-section">
+    <h2 class="services-title2">Servicios Ofrecidos</h2> 
+    <div class="cards">
+        <div class="card" >
+            <div class="card-background" style="background-image: url(../img/galeria/cumpleaños.jpg)"></div>
+            <div class="card-content">
+            <p>Fiestas</p>
+            <h3>Fiestas de Cumpleaños</h3>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-background" style="background-image: url(../img/galeria/servicio-catering.jpg)"></div>
+            <div class="card-content">
+            <p>Servicio</p>
+            <h3>Servicio de Catering</h3>
+            </div>
+        </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(../img/galeria/concierto.jpg)"></div>
+        <div class="card-content">
+        <p>Conciertos</p>
+        <h3>Conciertos</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(../img/galeria/boda.jpg)"></div>
+        <div class="card-content">
+        <p>Bodas</p>
+        <h3>Bodas</h3>
+        </div>
+      </div>
+
+    <div class="card">
+      <div class="card-background" style="background-image: url(../img/galeria/decoracion.jpg)"></div>
+      <div class="card-content">
+      <p>Decoración</p>
+      <h3>Decoración Personalizada</h3>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-background" style="background-image: url(../img/galeria/graduacion.jpg)"></div>
+      <div class="card-content">
+      <p>Graduación</p>
+      <h3>Fiestas de Graduación</h3>
+      </div>
+    </div>
+
+  <div class="card">
+    <div class="card-background" style="background-image: url(../img/galeria/babyshower.jpg)"></div>
+    <div class="card-content">
+    <p>Baby</p>
+    <h3>Baby Shower</h3>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-background" style="background-image: url(../img/galeria/torneos.jpg)"></div>
+    <div class="card-content">
+    <p>Torneos</p>
+    <h3>Torneos Deportivos</h3>
+    </div>
+  </div>
+       
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="Modal Image">
+      </div>
+      <div class="modal-text">
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>        
+        <a href="../html/cotizacion.html" class="quieres-cot">¿Quieres cotizar un evento?</a>
+      </div>
+      <span class="close">&times;</span>
+    </div>
+  </div>
+  
+  <script src="../js/modal.js"></script>
+
+<!-- Preguntas frecuentes -->
+<section id="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-item">
+      <h3 class="faq-question" data-key="reserva_fecha">¿Cómo puedo reservar una fecha para mi evento?</h3>
+      <p class="faq-answer"></p>
+  </div>
+  <div class="faq-item">
+      <h3 class="faq-question" data-key="tiempo_contratacion">¿Cuánto tiempo antes del evento debo realizar la contratación?</h3>
+      <p class="faq-answer"></p>
+  </div>
+  <div class="faq-item">
+      <h3 class="faq-question" data-key="cancelacion">¿Qué sucede si tengo que cancelar o cambiar la fecha de mi evento?</h3>
+      <p class="faq-answer"></p>
+  </div>
+  <div class="faq-item">
+      <h3 class="faq-question" data-key="numero_invitados">¿Tienen restricciones sobre el número de invitados?</h3>
+      <p class="faq-answer"></p>
+  </div>
+  <div class="faq-item">
+      <h3 class="faq-question" data-key="visitar_lugar">¿Puedo visitar el lugar antes de reservar?</h3>
+      <p class="faq-answer"></p>
+  </div>
+</section>
+
+<script src="../js/faq.js"></script>
+    
+
+<!--Footer-->
+    <div id="footer"></div>
+
+    <script>
+        fetch('../html/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+
+<script src="../js/llamada-servidor.js"></script>
+
+</body>
+</html>

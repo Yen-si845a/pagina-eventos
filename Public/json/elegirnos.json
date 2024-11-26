@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Experiencia",
+        "descripcion": "Contamos con años de experiencia en la planificación de eventos que garantizan resultados excepcionales.",
+        "imagen": "../img/otros/experiencia.jpg"
+    },
+    {
+        "titulo": "Personalización",
+        "descripcion": "Cada evento es único, nos adaptamos a tus necesidades para crear una experiencia inolvidable.",
+        "imagen": "../img/otros/personalizacion.jpg"
+    },
+    {
+        "titulo": "Calidad",
+        "descripcion": "Solo trabajamos con los mejores proveedores y profesionales del sector.",
+        "imagen": "../img/otros/calidad.jpg"
+    },
+    {
+        "titulo": "Soporte Completo",
+        "descripcion": "Te acompañamos en cada paso, desde la planificación hasta la ejecución del evento.",
+        "imagen": "../img/otros/soporte.jpg"
+    }
+]

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div id="barra"></div>
+
+    <script>
+        fetch('../html/barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra').innerHTML = data;
+            });
+    </script>
+
+    <main>
+        <!-- Contenedor de perfil -->
+<section class="perfil-container">
+    <section class="perfil-img">
+   <!-- Aquí se generará la inicial del usuario -->
+   <canvas id="perfil-canvas" class="foto-perfil"></canvas>    
+</section>
+
+    <!-- Información del usuario -->
+    <section class="perfil-info">
+        <h2>Bienvenido, <span id="nombre-usuario"></span></h2>
+        <p><strong>Username:</strong> <span id="username"></span></p>
+        <p><strong>Correo electrónico:</strong> <span id="email"></span></p>
+        <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+
+        <!-- Botones de cerrar sesión y eliminar cuenta -->
+        <div class="cierre-sesion">
+            <button class="cerrar-sesion" onclick="logout()">Cerrar Sesión</button>
+            <button class="eliminar-cuenta" onclick="mostrarEliminar()">Eliminar Cuenta</button>
+        </div>
+    </section>
+</section>
+
+<div id="overlay"></div>
+
+<!-- Form eliminar cuenta -->
+<section id="eliminar-cuenta-form" style="display: none;">
+    <h3>Eliminar cuenta</h3>
+    <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+    <button onclick="eliminarCuenta()">Eliminar Cuenta</button>
+    <button class="cancelar" onclick="cancelarEliminar()">Cancelar</button>
+</section>
+
+
+<script src="../js/eliminar-cuenta.js"></script>
+
+<script src="../js/cierre-sesion.js"></script>
+
+<div class="eventos01"><h2>Cotizaciones de Eventos</h2>
+<div class="eventos"></div>
+
+<!-- Modal para detalles -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <div id="modal-body" class="modal-body">
+            <!-- Contenido -->
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Contenedor de eventos -->
+<div class="eventos">
+    <!-- Eventos -->
+</div>
+<script src="../js/modal-eventos.js"></script>
+
+    </main>
+
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        fetch('../html/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+<script src="../js/imagen-perfil.js"></script>
+</body>
+</html>

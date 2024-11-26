@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" href="../img/Logo/logo2.png">
+</head>
+<body>
+  <!-- Sección Hero -->
+  <section class="hero-section" id="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Bienvenido/a</h1>
+        <p>Somos los mejores en organización de eventos, hacemos que cada experiencia sea unica e inolvidable.</p>
+        <p>¿Quiéres saber más sobre nosotros?</p>
+        <a href="registrarse.html"><button id="registrarse">Registrarse</button></a>
+        <a href="login.html"><button id="login">Login</button></a>
+      </div>
+      <!-- Sección de Tarjetas (al lado del texto) -->
+      <div class="cards-container">
+        <div class="card" onclick="changeBackground('../img/galeria/torneos.jpg')">
+          <div class="card-text">
+            <p>Torneos</p>
+            <h3>Torneos Deportivos</h3>
+          </div>
+          <img src="../img/galeria/torneos.jpg" alt="Movie 1">
+          <div class="card-description">
+            <p>Nos encargamos de la planificación y gestión de competencias deportivas</p>
+          </div>
+        </div>
+        <div class="card" onclick="changeBackground('../img/galeria/babyshower.jpg')">
+          <div class="card-text">
+            <p>Baby</p>
+            <h3>Baby Shower</h3>
+          </div> 
+          <img src="../img/galeria/babyshower.jpg" alt="Movie 2">
+          <div class="card-description">
+            <p>Conmemora la llegada de tu bebé con una celebración mágica.</p>
+          </div>
+        </div>
+        <div class="card" onclick="changeBackground('../img/galeria/cumpleaños.jpg')">
+          <div class="card-text">
+            <p>Fiestas</p>
+            <h3>Fiestas de Cumpleaños</h3>
+          </div>
+          <img src="../img/galeria/cumpleaños.jpg" alt="Movie 3">
+          <div class="card-description">
+            <p>Nos especializamos en la planificación y coordinación de fiestas de cumpleaños.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/index.js"></script>
+
+
+</body>
+</html>

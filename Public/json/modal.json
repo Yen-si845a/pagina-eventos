@@ -1,0 +1,53 @@
+{
+    "servicios": [
+      {
+        "id": "1",
+        "title": "Fiestas de Cumpleaños",
+        "text": "Nos especializamos en la planificación y coordinación de fiestas de cumpleaños, asegurándonos de que cada detalle se ejecute a la perfección para que tu celebración sea un verdadero éxito.",
+        "image": "../img/galeria/cumpleaños.jpg"
+      },
+      {
+        "id": "2",
+        "title": "Servicio de Catering",
+        "text": "Diseñamos menús exclusivos que combinan creatividad y sabor, perfectamente adaptados a los gustos y necesidades de cada cliente para ofrecer una experiencia gastronómica inolvidable.",
+        "image": "../img/galeria/servicio-catering.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Conciertos",
+        "text": "Nos encargamos de la producción y logística de espectáculos musicales, garantizando un desempeño excepcional en eventos, desde los más íntimos hasta los grandes escenarios.",
+        "image": "../img/galeria/concierto.jpg"
+      },
+      {
+        "id": "4",
+        "title": "Bodas",
+        "text": "Nos especializamos en la organización de ceremonias y recepciones, gestionando cada detalle desde la decoración y el catering hasta la coordinación completa del evento para garantizar una celebración perfecta.",
+        "image": "../img/galeria/boda.jpg"
+      },
+      {
+        "id": "5", 
+        "title": "Decoración Personalizada",
+        "text": "Diseñamos espacios excepcionales que capturan la esencia de cada evento, transformando cada celebración en una experiencia inolvidable.",
+        "image": "../img/galeria/decoracion.jpg"
+      },
+      {
+        "id": "6",
+        "title": "Fiestas de Graduación",
+        "text": "Creamos celebraciones de graduación memorables, donde combinamos música, exquisiteces culinarias y actividades divertidas para conmemorar este significativo logro académico.",
+        "image": "../img/galeria/graduacion.jpg"
+      },
+      {
+        "id": "7",
+        "title": "Baby Shower",
+        "text": "Conmemora la llegada de tu bebé con una celebración mágica, colmada de diversión, regalos y tiernos instantes, organizados para transformar este día en un recuerdo inolvidable.",
+        "image": "../img/galeria/babyshower.jpg"
+      },
+      {
+        "id": "8",
+        "title": "Torneos Deportivos",
+        "text": "Nos encargamos de la planificación y gestión de competencias deportivas, asegurando una organización impecable que abarca desde la logística hasta el entretenimiento, creando una experiencia competitiva y divertida para todos los participantes.",
+        "image": "../img/galeria/torneos.jpg"
+      }
+    ]
+  }
+  

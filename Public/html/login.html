@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../img/Logo/logo2.png">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm" action="http://localhost:3000/login" method="POST">
+                    <input type="text" id="usernameLogin" name="usernameLogin" placeholder="Username" required>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <img id="togglePassword" src="../img/login_registrarse/view.png" alt="Show password">
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                
+                <!--<p><a href="#">Olvidaste tu contraseña?</a></p>-->
+                <p class="sign-up">No tienes una cuenta? <a href="../html/registrarse.html">Sign Up</a></p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../img/login_registrarse/login.jpg" alt="Illustration">
+        </div>
+    </div>
+    <script src="../js/visibilidad-contraseña.js"></script>
+
+    
+
+</body>
+</html>

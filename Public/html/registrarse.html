@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="../img/Logo/logo2.png">
+    <link rel="stylesheet" href="../css/registrarse.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="../img/login_registrarse/sing_up.jpg" alt="Illustration">
+        </div>
+        <div class="form-section">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <form id="signupForm" action="http://localhost:3000/signup" method="POST">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <img id="togglePassword" src="../img/login_registrarse/view.png" alt="Show password">
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Phone Number" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                
+                <p class="sign-up">Ya tienes cuenta? <a href="../html/login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <a href="../html/registrarse.html"></a>
+    
+    <script src="../js/visibilidad-contraseña.js"></script>
+</body>
+</html>

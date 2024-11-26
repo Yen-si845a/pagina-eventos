@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sobre-nosotros.css">
+    <link rel="icon" href="../img/Logo/logo2.png">
+    <title>Sobre Nosotros</title>
+</head>
+<body>
+
+<!--Barra de navegación -->
+    <div id="barra"></div>
+
+    <script>
+        fetch('../html/barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra').innerHTML = data;
+            });
+    </script>
+
+<section class="intro-section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Conócenos<br><b>Más...</b></h1>
+        <a href="#about-us" class="scroll-button">Vamos</a>
+    </div>
+</section>
+
+
+<!--Mision-->
+<section id="about-us" class="about-us">
+    <div class="content-wrapper">
+        <div class="text-content">
+            <h2>Nuestra Misión</h2>
+            <p>En <strong>EYD</strong>, nuestro objetivo es crear momentos únicos que conecten a las personas y les proporcionen recuerdos inolvidables. Nos especializamos en diseñar eventos excepcionales y personalizados.</p>
+        </div>
+        <div class="image-content">
+            <img src="../img/mision.jpg" alt="Imagen de nuestra misión">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Por qué Elegirnos -->
+<section class="why-choose-us">
+    <h2 class="services-title">¿Por qué elegirnos?</h2>
+
+    <div class="slider-container">
+        <div class="slider-track">
+        </div>
+    </div>
+</section>
+
+<script src="../js/elegirnos.js"></script>
+
+
+<!--Historia-->
+<section class="nuestra-historia">
+    <div class="contenido-historia">
+      <h2>Nuestra Historia</h2>
+  
+      <div class="parrafo-con-imagen">
+        <p>
+          Todo comenzó en el año 2010, cuando un grupo de amigos apasionados por la organización de eventos decidió unir sus talentos y crear una pequeña agencia local. En ese momento, no imaginaban el impacto que su visión tendría en el futuro. Con una oficina improvisada en el garaje de uno de los fundadores y mucha energía, comenzaron a organizar pequeñas celebraciones familiares y eventos comunitarios, siempre con el objetivo de ofrecer experiencias inolvidables.
+        </p>
+        <img src="../img/amigos.jpg" alt="Imagen 1" class="imagen-lado">
+      </div>
+  
+      <br><br>
+  
+      <div class="parrafo-con-imagen">
+        <img src="../img/esfuerzo.jpg" alt="Imagen 2" class="imagen-lado">
+        <p>
+          Con el paso del tiempo, la dedicación y el esfuerzo dieron sus frutos. Los eventos organizados por la agencia empezaron a ganar popularidad, atrayendo la atención de clientes más grandes. Esto permitió que la empresa creciera rápidamente, abriendo nuevas oficinas y sumando más profesionales talentosos a su equipo. La clave de su éxito siempre ha sido la atención a los detalles, el enfoque personalizado y la capacidad de adaptarse a las necesidades de cada cliente.
+        </p>
+      </div>
+  
+      <br><br>
+  
+      <div class="parrafo-con-imagen">
+        <p>
+          Hoy en día, somos una agencia líder en la planificación de eventos, ofreciendo servicios completos que van desde bodas hasta grandes conferencias empresariales. Aunque hemos crecido, seguimos fieles a nuestros principios originales: crear momentos especiales, únicos e inolvidables. Nuestro equipo está comprometido con la innovación y la excelencia, asegurando que cada evento sea tan memorable como el primero que organizamos en aquel pequeño garaje.
+        </p>
+        <img src="../img/agencia.jpg" alt="Imagen 3" class="imagen-lado">
+      </div>
+    </div>
+  </section>
+  
+    <!--Footer-->
+    <div id="footer"></div>
+
+    <script>
+        fetch('../html/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+    <script src="../js/llamada-servidor.js"></script>
+</body>
+</html>
