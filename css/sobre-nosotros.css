@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    transition: 0.3s;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+.intro-section {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1e1e1e;
+    background-image: url('../img/04.jpg');  
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d0d0de8;
+}
+
+.content {
+    position: relative;
+    z-index: 2; 
+}
+
+.content b{
+    font-weight: 600;
+    color: #0487d9;
+    font-size: 5rem;
+}
+
+.content h1 {
+    color: #f2f2f2;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.scroll-button {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    color: #1e1e1e;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+/* Animación de flotación*/
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scroll-button:hover {
+    background-color: #0378a6;
+    color: #f2f2f2;
+}
+
+.scroll-button:active {
+    transform: scale(0.95); 
+}
+
+
+.content-wrapper {
+    display: flex;
+    width: 100%; 
+    height: 100vh; 
+}
+
+.text-content {
+    width: 50%;
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f2f2; 
+}
+
+.text-content h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+.text-content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: #1e1e1ed7;
+    line-height: 1.5;
+}
+
+.image-content {
+    width: 50%; 
+    overflow: hidden; 
+}
+
+.image-content img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Estilos de la sección "¿Por qué elegirnos?" */
+.why-choose-us {
+    margin: 90px auto; 
+    max-width: 1800px; 
+    background-color: #e3e3e3;
+    padding: 60px 0;
+    width: 100vw;  
+    height: 126vh;  
+    margin: 0;
+}
+
+.services-title {
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 3rem;
+    color: #0d0d0d;
+    margin-top: 70px;
+    margin-bottom: 110px; 
+}
+
+.slider-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.slider-track {
+    display: flex; 
+    transition: transform 0.5s ease; 
+}
+
+.slider-slide {
+    width: 320px; 
+    height: 450px;
+    margin: 0 15px;
+    position: relative;
+    background-color: #f2f2f2; 
+    text-align: center;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.141);
+    opacity: 1; 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.slider-slide.active {
+    opacity: 1; 
+    transform: scale(1.1); 
+    transition: 0.5s;
+    
+}
+
+.slider-slide img {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.slider-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0px; 
+    left: 0px; 
+    color: white;
+    background: rgba(0, 0, 0, 0.767);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.slider-slide.active .slider-content {
+    height: 100%;
+    border-top-right-radius: 0px; 
+}
+
+
+
+.slider-content h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #f2f2f2;
+    margin: 10px 0;
+    font-size: 24px; 
+}
+
+.slider-slide.active .slider-content h3 {
+    margin-top: 50%;
+}
+
+.slider-content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; 
+    color: #f2f2f2;
+}
+
+.slider-content p {
+    display: none; 
+}
+
+.slider-slide.active .slider-content p {
+    margin-top: 0%;
+    display: block; 
+}
+
+/*Histioria*/
+.nuestra-historia {
+    background-color: #f2f2f2;
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contenido-historia {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .nuestra-historia h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 3rem;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    color: #1e1e1e;
+  }
+  
+  .nuestra-historia p {
+    width: 50%;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #1e1e1ed7;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .parrafo-con-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .parrafo-con-imagen p {
+    width: 100%;
+    margin-left: 30px;
+    text-align: justify;
+  }
+  
+  .imagen-lado {
+    border-radius: 10px;
+    width: 40%;
+    max-width: 500px;
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .parrafo-con-imagen img {
+    margin: 0;
+    margin-left: 30px;
+  }
+  
+  .parrafo-con-imagen:nth-child(odd) img {
+    order: 1;
+  }
+  
+  
+  .parrafo-con-imagen:nth-child(even) img {
+    order: -1; 
+  }
+  
+  

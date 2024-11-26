@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    transition: 0.3s;
+}
+
+body {
+    padding-top: 90px;
+    margin: 0;
+    height: 100%; 
+    overflow-x: hidden; 
+    background: linear-gradient(90deg#f2f2f2, #e3e3e3);
+    overflow-x: hidden;
+}
+
+
+
+.cotizacion-form {
+    padding: 20px;
+    max-width: 900px; 
+    margin: 15px auto;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    color: #f2f2f2;
+}
+ 
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cotizacion-form h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+legend {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0378a6;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+label {
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    font-size: 0.9rem;
+    color: #f2f2f2;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    font-family: "Open Sans", sans-serif;
+
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    color: #1e1e1e;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0378a6;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0487d9;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0378a6;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-item {
+    flex: 1;
+}
+
+.cotizacion-form {
+    padding: 20px;
+    max-width: 900px;
+    margin: 15px auto;
+    background-color: #1e1e1ee0; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    color: #f2f2f2;
+    position: relative; 
+    z-index: 1; 
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    width: 49.7%;
+    padding: 15px 30px; 
+    font-size: 17px; 
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: transparent;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+    border: 1px solid #f2f2f2;
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    color: #0378a6;
+    border: 1px solid #0378a6;
+}
+
+button[type="reset"]:hover {
+    background-color: #0378a6;
+    color: #0d0d0d;
+}
+
+
+
+
