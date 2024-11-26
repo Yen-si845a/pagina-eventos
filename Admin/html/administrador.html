@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Cotizaciones</title>
+    <link rel="stylesheet" href="../css/administrador.css"> <!-- El archivo CSS -->
+    <link rel="icon" href="/Public/img/Logo/Logo2.png">
+</head>
+<body>
+
+    <header>
+        <h1>Administrador de Cotizaciones</h1>
+    </header>
+
+    <main>
+        <h2>Listado de Cotizaciones</h2>
+
+        <!-- Filtros de estado -->
+        <div class="botones">
+            <button class="boton" onclick="filtrarCotizaciones('todos')">Todos</button>
+            <button class="boton" onclick="filtrarCotizaciones('realizado')">Realizados</button>
+            <button class="boton" onclick="filtrarCotizaciones('pendiente')">Pendientes</button>
+            <button class="boton" onclick="filtrarCotizaciones('anulado')">Anulados</button>
+        </div>
+
+        <div id="cotizaciones-list">
+            <!--Las cotizaciones-->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../js/administrador.js"></script>
+
+
+</body>
+</html>
