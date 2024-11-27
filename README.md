@@ -36,7 +36,8 @@ npm install express mysql2 bcryptjs body-parser express-session cors
 ---
 
 ###3. Ejecutar el Proyecto
-Una vez configurado, ejecuta el proyecto, en el terminal escribe:
+Una vez configurado, ejecute el proyecto, en el terminal escriba:
+
 ---
 node server.js
 ---
