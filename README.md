@@ -45,7 +45,7 @@ Este archivo contiene todas las conexciones y la corrida del servidor el cual se
 
 ## Uso
 
-**Registro de Usuario:** Los nuevos usuarios pueden registrarse.
-**Login:** Los usuarios registrados pueden acceder a la plataforma utilizando su usuario y contraseña.
-**Cotización de Eventos:** Después de iniciar sesión, los usuarios pueden ir a la sección de cotizacion para hacer una nueva cotización de un evento.
+- **Registro de Usuario:** Los nuevos usuarios pueden registrarse.
+- **Login:** Los usuarios registrados pueden acceder a la plataforma utilizando su usuario y contraseña.
+- **Cotización de Eventos:** Después de iniciar sesión, los usuarios pueden ir a la sección de cotizacion para hacer una nueva cotización de un evento.
 
