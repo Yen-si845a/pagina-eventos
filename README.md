@@ -23,19 +23,20 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 ### 1. Clonar el Repositorio
 Descargar el repositorio.
 
-###2. Configurar el Backend
+### 2. Configurar el Backend
 Asegúrate de tener Nodejs y Xampp/MySQL instalados en tu máquina.
 
 - Abre el proyecto en Visual Studio Code.
 - Prende el xampp y en el MySQL implementa la base de datos
 - Configura la conexión a la base de datos.
 - Al tener Nodejs instalado en el terminal del proyecto haz los siquientes codigos:
----
+```
 npm init -y
-npm install express mysql2 bcryptjs body-parser express-session cors
----
 
-###3. Ejecutar el Proyecto
+npm install express mysql2 bcryptjs body-parser express-session cors
+```
+
+### 3. Ejecutar el Proyecto
 Una vez configurado, ejecute el proyecto, en el terminal escriba:
 
 ---
@@ -44,8 +45,9 @@ node server.js
 
 Este archivo contiene todas las conexciones y la corrida del servidor el cual se corre en el "http://localhost:3000"
 
-##Uso
-Registro de Usuario: Los nuevos usuarios pueden registrarse.
-Login: Los usuarios registrados pueden acceder a la plataforma utilizando su usuario y contraseña.
-Cotización de Eventos: Después de iniciar sesión, los usuarios pueden ir a la sección de cotizacion para hacer una nueva cotización de un evento.
+## Uso
+
+**Registro de Usuario:** Los nuevos usuarios pueden registrarse.
+**Login:** Los usuarios registrados pueden acceder a la plataforma utilizando su usuario y contraseña.
+**Cotización de Eventos:** Después de iniciar sesión, los usuarios pueden ir a la sección de cotizacion para hacer una nueva cotización de un evento.
 
