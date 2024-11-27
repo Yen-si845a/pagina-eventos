@@ -38,11 +38,9 @@ npm install express mysql2 bcryptjs body-parser express-session cors
 
 ### 3. Ejecutar el Proyecto
 Una vez configurado, ejecute el proyecto, en el terminal escriba:
-
----
+```
 node server.js
----
-
+```
 Este archivo contiene todas las conexciones y la corrida del servidor el cual se corre en el "http://localhost:3000"
 
 ## Uso
