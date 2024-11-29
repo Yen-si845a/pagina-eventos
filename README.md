@@ -43,6 +43,9 @@ node server.js
 ```
 Este archivo contiene todas las conexciones y la corrida del servidor el cual se corre en el "http://localhost:3000"
 
+### 4. Correr la pagina
+Habre la pagina de index.html y a partir de ahi se puede empezar a probar el funcionamiento completo.
+
 ## Uso
 
 - **Registro de Usuario:** Los nuevos usuarios pueden registrarse.
